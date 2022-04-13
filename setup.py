@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 setup(
     name='banko',
     version='0.1.0',
-    download_url='https://github.com/skipperkongen/banko/archive/refs/tags/v0.1.0.tar.gz',
+    download_url='https://github.com/skipperkongen/banko/archive/refs/tags/v0.1.1.tar.gz',
     author="Pimin Konstantin Kefaloukos",
     author_email="skipperkongen@gmail.com",
     description="Library for generating banko plates",
