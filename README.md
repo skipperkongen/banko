@@ -16,18 +16,20 @@ Usage:
 
 ```python
 from banko.algorithms import Algorithm2
+from banko.render import render_ascii
 
 seed = 42
 algo = Algorithm2(seed)
-algo.generate()
+rows = algo.generate()
+print(render_ascii(rows))
 ```
 
 Output:
 
-```python
-[[0, None, 21, 30, None, None, None, 73, 80],
- [None, None, 28, None, 41, None, 66, 74, 82],
- [None, 19, 29, None, 43, 58, None, None, 86]]
+```
+1    21 30          73 80
+     22    41    66 74 82
+  18 28    43 58       86
 ```
 
 ## Future work
