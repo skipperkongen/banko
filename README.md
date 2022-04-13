@@ -6,6 +6,12 @@ Dependencies:
 
 - Python 3
 
+How to install:
+
+```bash
+pip install banko
+```
+
 Usage:
 
 ```python
