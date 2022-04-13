@@ -18,9 +18,8 @@ Usage:
 from banko.algorithms import Algorithm2
 from banko.render import render_ascii
 
-seed = 42
-algo = Algorithm2(seed)
-rows = algo.generate()
+algo = Algorithm2()
+rows = algo.generate(seed=42)
 print(render_ascii(rows))
 ```
 

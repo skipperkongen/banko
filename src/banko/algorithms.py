@@ -2,11 +2,12 @@ import random
 
 class Algorithm2:
 
-    def __init__(self, seed):
-        self.rng = random.Random(seed)
+    def __init__(self):
+        self.rng = random.Random()
 
-    def generate(self):
+    def generate(self, seed=None):
         # first, generate full plate
+        self.rng = random.Random(seed)
         cols = [
             self._generate_full_col(col)
             for col in range(9)
