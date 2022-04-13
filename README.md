@@ -15,7 +15,7 @@ pip install banko
 Usage:
 
 ```python
-from banko import Algorithm2
+from banko.algorithms import Algorithm2
 
 seed = 42
 algo = Algorithm2(seed)
