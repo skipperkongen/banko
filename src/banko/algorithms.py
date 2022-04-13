@@ -16,10 +16,11 @@ class Algorithm2:
         return plate
 
     def _generate_full_col(self, col):
+        min_num = 1 if col == 0 else 0
         max_num = 11 if col == 8 else 10
         return [
             x+col*10 for x
-            in sorted(self.rng.sample(range(max_num), k=3))
+            in sorted(self.rng.sample(range(min_num, max_num), k=3))
         ]
 
     def _eliminate(self, cols):
