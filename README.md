@@ -1,6 +1,6 @@
 # Banko
 
-A small pure Python library for generating random Banko-plader (Danish), also known as Bingo plates in the UK.
+A small pure Python library for randomly generating Banko-plader (Danish), also known as Bingo plates in the UK.
 
 Dependencies:
 
