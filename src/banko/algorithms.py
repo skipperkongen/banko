@@ -6,8 +6,10 @@ class Algorithm2:
         self.rng = random.Random()
 
     def generate(self, seed=None):
+        # Use custom rng if seed specified
+        if seed is None:
+            self.rng = random.Random(seed)
         # first, generate full plate
-        self.rng = random.Random(seed)
         cols = [
             self._generate_full_col(col)
             for col in range(9)
